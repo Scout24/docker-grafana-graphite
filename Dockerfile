@@ -1,4 +1,5 @@
 FROM     ubuntu:14.04
+MAINTAINER \#IS24-business-platform-spectre-ds@scout24.com
 
 # ---------------- #
 #   Installation   #
