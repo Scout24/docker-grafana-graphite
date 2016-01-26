@@ -1,3 +1,8 @@
+IS24 customization
+---------------------------------------------
+* use Grafana 2.6.0
+* configure statsd to delete stale gauges
+
 StatsD + Graphite + Grafana 2 + Kamon Dashboards
 ---------------------------------------------
 
