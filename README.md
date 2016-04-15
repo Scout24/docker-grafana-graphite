@@ -4,8 +4,9 @@ IS24 customization
 * configure statsd to delete stale gauges
 * Travis + Docker push
 
-image:: https://travis-ci.org/ImmobilienScout24/docker-grafana-graphite.svg?branch=master
-:target: https://travis-ci.org/ImmobilienScout24/docker-grafana-graphite
+![build status](https://travis-ci.org/ImmobilienScout24/docker-grafana-graphite.svg?branch=master)
+
+https://travis-ci.org/ImmobilienScout24/docker-grafana-graphite
 
 StatsD + Graphite + Grafana 2 + Kamon Dashboards
 ---------------------------------------------
