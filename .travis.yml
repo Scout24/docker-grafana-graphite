@@ -20,9 +20,9 @@ install:
 script:
     - docker build -t grafana-graphite:latest .
     - if [ $TRAVIS_BRANCH == "master" ] && [ $TRAVIS_PULL_REQUEST == "false" ]; then
-        docker tag grafana-graphite:latest immobilienscout24/grafana-graphite:latest ;
-        docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" ;
-        docker push immobilienscout24/grafana-graphite ;
-      else
-        echo "skipping Docker upload" ;
-      fi
+    -   docker tag grafana-graphite:latest immobilienscout24/grafana-graphite:latest ;
+    -   docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" ;
+    -   docker push immobilienscout24/grafana-graphite ;
+    -  else
+    -    echo "skipping Docker upload" ;
+    -  fi
