@@ -12,11 +12,6 @@
 
   backends: ['./backends/graphite'],
   graphite: {
-    legacyNamespace: false, 
-    globalPrefix:  "", 
-    prefixCounter: "", 
-    prefixTimer:   "", 
-    prefixGauge:   "", 
-    prefixSet:     ""
+    legacyNamespace: false
   }
 }
