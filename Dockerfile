@@ -41,7 +41,7 @@ RUN     git clone https://github.com/graphite-project/graphite-web.git /src/grap
 # Install StatsD
 RUN     git clone https://github.com/etsy/statsd.git /src/statsd                                                                        &&\
         cd /src/statsd                                                                                                                  &&\
-        git checkout v0.7.2
+        git checkout v0.8.0
 
 
 # Install Grafana
