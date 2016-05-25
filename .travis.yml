@@ -24,5 +24,7 @@ script:
        docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" ;
        docker push immobilienscout24/grafana-graphite ;
       else
-        echo "skipping Docker upload" ;
+        docker tag grafana-graphite:latest immobilienscout24/grafana-graphite:$TRAVIS_BRANCH ;
+        docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" ;
+        docker push immobilienscout24/grafana-graphite:$TRAVIS_BRANCH ;
       fi
