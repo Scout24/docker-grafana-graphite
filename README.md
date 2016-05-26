@@ -1,6 +1,6 @@
 IS24 customization
 ---------------------------------------------
-* use Grafana 2.6.0
+* use Grafana 3.0.3
 * configure statsd to delete stale gauges
 * Travis + Docker push
 
