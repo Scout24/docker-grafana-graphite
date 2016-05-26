@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install all prerequisites
 RUN     apt-get -y update
-RUN     apt-get -y install software-properties-common
+RUN     apt-get -y install software-properties-common cron
 RUN     add-apt-repository -y ppa:chris-lea/node.js
 RUN     apt-get -y update
 RUN     apt-get -y install python-django-tagging python-simplejson python-memcache python-ldap python-cairo python-pysqlite2 python-support \
