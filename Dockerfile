@@ -73,9 +73,9 @@ RUN     chmod 0664 /opt/graphite/storage/graphite.db
 RUN     cd /opt/graphite/webapp/graphite && python manage.py syncdb --noinput
 
 # purge old wisper files 
-RUN echo "#!/bin/bash" > /etc/cron.daily/purge-wisper
-RUN echo "find /vol/monitoring/data/whisper/ -mtime +30 -exec rm -rf {} \;" >> /etc/cron.daily/purge-wisper
-RUN chmod +x /etc/cron.daily/purge-wisper
+RUN echo "#!/bin/bash" > /etc/cron.hourly/purge-wisper
+RUN echo "find /vol/monitoring/data/whisper/ -mtime +30 -exec rm -rf {} \;" >> /etc/cron.hourly/purge-wisper
+RUN chmod +x /etc/cron.hourly/purge-wisper
 
 # Configure Grafana
 ADD     ./grafana/custom.ini /opt/grafana/conf/custom.ini
