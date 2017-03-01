@@ -1,6 +1,6 @@
 IS24 customization
 ---------------------------------------------
-* use Grafana 2.6.0
+* use Grafana 4.1.2
 * configure statsd to delete stale gauges
 * Travis + Docker push
 
@@ -8,7 +8,7 @@ IS24 customization
 
 https://travis-ci.org/ImmobilienScout24/docker-grafana-graphite
 
-StatsD + Graphite + Grafana 2 + Kamon Dashboards
+StatsD + Graphite + Grafana 4 + Kamon Dashboards
 ---------------------------------------------
 
 This image contains a sensible default configuration of StatsD, Graphite and Grafana, and comes bundled with a example
